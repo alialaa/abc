@@ -1,9 +1,11 @@
 name: Actions Workflow
 
-# on: [push]
-on:
-  schedule:
-    - cron: '0/6 * * * *'
+on: [push]
+
+# on:
+#   schedule:
+#     - cron: '0/6 * * * *'
+ 
     # - cron: "0/6 * * * *"
   # pull_request:
   #   types: [closed, assigned, opened, reopened]
