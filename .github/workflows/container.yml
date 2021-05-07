@@ -50,4 +50,8 @@ jobs:
         with: 
           entrypoint: "/usr/local/bin/node"
           args: "-v"
-
+      - name: Log OS version
+        uses: docker://node:16.1.0-alpine3.11
+        with: 
+          entrypoint: "/bin/cat"
+          args: "/etc/os-release"
