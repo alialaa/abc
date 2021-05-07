@@ -55,7 +55,7 @@ jobs:
         with: 
           entrypoint: "/bin/cat"
           args: "/etc/os-release"
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v1
       - name: Run a script
         uses: docker://node:12.14.1-alpine3.10
         with: 
