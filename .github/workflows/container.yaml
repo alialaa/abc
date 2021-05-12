@@ -30,8 +30,6 @@ on: push
 #       - name: Get Users
 #         run: curl http://localhost:3001/api/users
 
-
-
 jobs:
   docker-steps:
     runs-on: ubuntu-latest
