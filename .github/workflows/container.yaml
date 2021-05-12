@@ -38,23 +38,23 @@ jobs:
     container:
       image: node:10.18.0-jessie
     steps:
-      - name: Log node version 1
-        run: node -v
-      - name: Step with docker
-        uses: docker://node:12.14.1-alpine3.10
-        with: 
-          entrypoint: "/bin/echo"
-          args: "Hello World"
-      - name: Log node version 2
-        uses: docker://node:12.14.1-alpine3.10
-        with: 
-          entrypoint: "/usr/local/bin/node"
-          args: "-v"
-      - name: Log OS version
-        uses: docker://node:16.1.0-alpine3.11
-        with: 
-          entrypoint: "/bin/cat"
-          args: "/etc/os-release"
+      # - name: Log node version 1
+      #   run: node -v
+      # - name: Step with docker
+      #   uses: docker://node:12.14.1-alpine3.10
+      #   with: 
+      #     entrypoint: "/bin/echo"
+      #     args: "Hello World"
+      # - name: Log node version 2
+      #   uses: docker://node:12.14.1-alpine3.10
+      #   with: 
+      #     entrypoint: "/usr/local/bin/node"
+      #     args: "-v"
+      # - name: Log OS version
+      #   uses: docker://node:16.1.0-alpine3.11
+      #   with: 
+      #     entrypoint: "/bin/cat"
+      #     args: "/etc/os-release"
       - uses: actions/checkout@v1
       - name: Run a script
         uses: docker://node:12.14.1-alpine3.10
